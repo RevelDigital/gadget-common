@@ -5,7 +5,7 @@
     namespace.getFamilyName = function (css) {
       if(FONT_FAMILY_REGEX.test(css)) {
         var matches = css.match(FONT_FAMILY_REGEX);
-        return matches[1].split(',')[0].trim();
+        return $.trim(matches[1].split(',')[0]);
       } else {
         return "";
       }
