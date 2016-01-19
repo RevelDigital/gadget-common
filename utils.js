@@ -1,6 +1,6 @@
 ;(function ( namespace, undefined ) {
 
-    var FONT_FAMILY_REGEX = /font-family:\s*(?:&#39;)*['"]*(.+?)['"]*(?:&#39;)*\s*;/i;
+    var FONT_FAMILY_REGEX = /font-family:\s*(?:[&#39;&#34;])*['"]*(.+?)['"]*(?:[&#39;&#34;])*\s*;/i;
     
     namespace.getFamilyName = function (css) {
       if(FONT_FAMILY_REGEX.test(css)) {
